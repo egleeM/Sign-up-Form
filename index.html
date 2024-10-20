@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'NorseBold';
+            src: url('Norse-Bold.otf'); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="logo-overlay">
+                <img src="odin.png" alt="Odin Logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class ="credits">
+                Photo by Halie West on Unsplash
+            </div>
+            
+        </div>
+        <div class="form-section">
+            <div class="intro-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. </p> 
+                <p> Sign up <em>now</em> to get started.</p>
+                <br>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-container">
+                <h2>Let's do this!</h2>
+                <br>
+            
+                <form action="#">
+                    <div class="form-columns">
+                        <div class="column">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="column">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
+
+                    <p class="error-message">* Passwords do not match</p>
+                </form>
+            </div>
+            
+            <div class="button-container">
+                <button type="submit" class="create-account-btn">Create Account</button>
+                <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
